@@ -40,8 +40,76 @@ nav a.link {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: "Afacad Flux", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 5px;
+}
+
+/* Estilos para o container principal */
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha, se necessário */
+    gap: 20px; /* Define o espaço entre os botões */
+}
+/* Estilos para os botões de ação */
+.btn {
+    padding-left: 30px;
+    display: inline-flex; /* Altera para flex para organizar imagem e texto */
+    place-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinha o texto à esquerda */
+    border-radius: 14px;
+    justify-content: flex-start; /* Garante que o conteúdo fique alinhado à esquerda */
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    align-items: center;
+    cursor: pointer;
+    width: 300px; /* Define uma largura fixa para o botão */
+    height: 200px; /* Define uma altura fixa para o botão */
+}
+
+/* Estilos para a imagem dentro do botão */
+.btn img {
+    width: 50px; /* Define o tamanho da imagem */
+    height: 50px;
+    object-fit: contain; /* Garante que a imagem não seja distorcida */
+}
+
+/* Estilos para o texto dentro do botão */
+.btn-text {
+    display: flex;
+    flex-direction: column; /* Organiza o título e a descrição em coluna */
+    justify-content: center; /* Centraliza verticalmente o texto */
+}
+
+.btn-text h3 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 18px; /* Tamanho do título */
+}
+
+.btn-text h5 {
+    margin: 0;
+    font-size: 14px; /* Tamanho da descrição */
+    font-weight: 400; /* Deixa a descrição mais leve */
+    color: #555; /* Cor mais clara para diferenciar do título */
+}
+/* Estilos para os botões de ação */
+.btn:hover {
+    background-color: #91e1ef;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
+}
+/* Estilos para títulos */
+.h1 {
+    margin: 20px 0;
+    color: #173c8e;
+    padding-left: 8px;
 }
