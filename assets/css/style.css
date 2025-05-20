@@ -1,0 +1,47 @@
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #eff1f2;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+/* Estilos para a logo */
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos para os botões */
+nav button {
+    background-color: #173c8e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Efeito hover para os botões */
+nav button:hover {
+    background-color: #00BFDF;
+}
+
+nav a.link {
+	color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+}
