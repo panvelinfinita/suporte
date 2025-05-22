@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Central de Suporte - Marketplace Panvel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #173C8E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      align-items: flex;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    h1.h1 {
+      margin: 30px 0 10px;
+      font-size: 32px;
+      color: #333;
+      text-align: left;
+      padding-left: 26px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      padding: 40px 20px;
+    }
+
+    .category-card {
+      background: white;
+      width: 300px;
+      height: 170px;
+      padding: 24px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      text-align: center;
+      color: #173C8E;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 15px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Central de Suporte - Marketplace Panvel</h1>
+  </header>
+<br><br>
+  <h1 class="h1">Olá! Como podemos te ajudar hoje?</h1>
+  <h2 style="padding-left: 28px;">Selecione uma das opções para seguir:</h2>
+
+  <div class="categories">
+    <a class="category-card" href="https://seulink1.com" target="_blank">
+      <div class="card-content">
+        <h3>Enviar Solicitação</h3><br>
+        <p>Envie sua solicitação para nossa equipe e um dos nossos especialistas irá responder.</p>
+      </div>
+    </a>
+
+    <a class="category-card" href="https://seulink2.com" target="_blank">
+      <div class="card-content">
+        <h3>Base de Conhecimento</h3><br>
+        <p>Consulte nossa base de conhecimento e realize todo treinamento necessário para operar em nosso marketplace.</p>
+      </div>
+    </a>
+
+    <a class="category-card" href="https://seulink3.com" target="_blank">
+      <div class="card-content">
+        <h3>Chat</h3><br>
+        <p>Converse com nosso chatbot para tirar suas dúvidas.</p>
+      </div>
+    </a>
+
+    <a class="category-card" href="https://seulink4.com" target="_blank">
+      <div class="card-content">
+        <h3>Acessar Plataforma</h3><br>
+        <p>Pensar num descritivo ainda.</p>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
