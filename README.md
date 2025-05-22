@@ -4,11 +4,11 @@ Construído utilizando:
 - HTML
 - CSS
 - Gitbook
-- Microsoft Forms
-- Microsoft PowerAutomate
+- Google Forms
+- Google Apps Script
 - Microsoft Planner
 
-Deploy utilizando Github pages: [Link portal de suporte](https://panvelinfinita.github.io/tickets/index.html)
+Deploy utilizando Github pages: [Link portal de suporte](https://panvelinfinita.github.io/tickets/home)
 
 Projeto realizado por: 
 - João Vitor da Costa (@jvchosta)
