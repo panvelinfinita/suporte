@@ -35,9 +35,10 @@
     .categories {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 32px;
       padding: 40px 20px;
+      overflow-x: auto;
     }
 
     .category-card {
@@ -53,6 +54,7 @@
       text-decoration: none;
       color: inherit;
       transition: transform 0.2s, box-shadow 0.2s;
+      flex: 0 0 auto;
     }
 
     .category-card:hover {
@@ -78,12 +80,36 @@
       color: #666;
     }
 
-    @media (max-width: 768px) {
-      .categories {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: unset;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+}
   </style>
 </head>
 <body>
@@ -96,7 +122,7 @@
   <h2 style="padding-left: 28px;">Selecione uma das opções para seguir:</h2>
 
   <div class="categories">
-    <a class="category-card" href="https://panvel-infinita.gitbook.io/suporte/" target="_blank">
+    <a class="category-card" href="https://panvelinfinita.github.io/suporte/newticket" target="_blank">
       <div class="card-content">
         <h3>Enviar Solicitação</h3><br>
         <p>Envie sua solicitação para nossa equipe e um dos nossos especialistas irá responder.</p>
@@ -113,14 +139,14 @@
     <a class="category-card" href="https://www.panvel.com" target="_blank">
       <div class="card-content">
         <h3>Chat</h3><br>
-        <p>Converse com nosso chatbot para tirar suas dúvidas.</p>
+        <p>Ficou com dúvidas? Converse com nosso chatbot para tirar suas dúvidas.</p>
       </div>
     </a>
 
     <a class="category-card" href="https://seller.marketplacepanvel.com.br/v3/" target="_blank">
       <div class="card-content">
-        <h3>Acessar Plataforma</h3><br>
-        <p>Pensar num descritivo ainda.</p>
+        <h3>Acesso à Plataforma</h3><br>
+        <p>Gerencie toda sua operação em nosso marketplace em nossa Central de Seller.</p>
       </div>
     </a>
   </div>
