@@ -1,44 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central de Suporte - Marketplace Panvel</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Central de Suporte - Marketplace Panvel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #173C8E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      align-items: flex;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    h1.h1 {
+      margin: 30px 0 10px;
+      font-size: 32px;
+      color: #333;
+      text-align: left;
+      padding-left: 26px;
+    }
+    .link {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto do botão */
+        }
+    .myButton {
+	    box-shadow: 0px 4px 14px -7px #424242;
+	    background-color:#173C8E;
+	    border-radius:35px;
+	    display:inline-block;
+	    cursor:pointer;
+	    color:#ffffff;
+	    font-family: 'Favorit', sans-serif;
+	    font-size:20px;
+	    font-weight:bold;
+	    padding:13px 32px;
+	    text-decoration:none;
+}
+    .myButton:hover {
+	    background-color:#4EAAC8
+}
+    .myButton:active {
+	    position:relative;
+	    top:1px;
+}
+
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html"><img src="assets/src/logo.png" alt="Logo"></a>
-        </div>
-
-        <!-- Botões de navegação -->
-        <nav>
-            <button><a href="newticket.html" class="link" target="_self">Novo Ticket</a></button>
-            <button>Consulta de Ticket</button>
-            <button>Chat</button>
-            <button><a href="https://panvel-infinita.gitbook.io/panvel-infinita-base-de-conhecimento/" class="link" target="_blank">Base de conhecimento</a></button>
-            <!-- <button><a href="" class="link" target="_self">Consulta de Produtos</a></button> -->
-        </nav>
-    </header>
-<!-- Fim do Cabeçalho -->
-
-<!-- Início do Corpo -->
-    <p>Novo ticket</p>
-    
-    
-    <!-- Rodapé -->
-    <br><br>
-    <footer style="padding-bottom: 0px; border-top: 1px solid #ccc;">
-        <p>&copy; 2025 Panvel Infinita. Todos os direitos reservados.</p>
-        <p><a href="https://www.panvel.com/panvel" target="_blank">Panvel: A rotina que faz bem.</a></p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
-
-    </body>
-    </html>
+<a href="https://panvelinfinita.github.io/suporte/home" target="_self" class="link">
+  <header>
+    <h1>Central de Suporte - Marketplace Panvel</h1>
+  </header></a>
+<br><br>
+  <h1 class="h1">Solicitação de Demandas</h1>
+  <h2 style="padding-left: 28px;">Para o envio de solicitações de demandas ou dúvidas, acesse o formulário abaixo que o time de Suporte do Marketplace irá atuar.</h2>
+<br>
+  <button class="myButton" style="margin-left: 28px;">
+    <a href="https://forms.gle/z1eTKPssDNfA2Hnt6" class="link" target="_blank">Enviar solicitação</a>
+  </button>
+</body>
+</html>
