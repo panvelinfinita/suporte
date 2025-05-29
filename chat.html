@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Central de Suporte - Marketplace Panvel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #173C8E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      align-items: flex;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    h1.h1 {
+      margin: 30px 0 10px;
+      font-size: 32px;
+      color: #333;
+      text-align: left;
+      padding-left: 26px;
+    }
+    .link {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto do botão */
+        }
+    .myButton {
+	    box-shadow: 0px 4px 14px -7px #424242;
+	    background-color:#173C8E;
+	    border-radius:35px;
+	    display:inline-block;
+	    cursor:pointer;
+	    color:#ffffff;
+	    font-family: 'Favorit', sans-serif;
+	    font-size:20px;
+	    font-weight:bold;
+	    padding:13px 32px;
+	    text-decoration:none;
+}
+    .myButton:hover {
+	    background-color:#00BFDF
+    
+}
+    .myButton:active {
+	    position:relative;
+	    top:1px;
+}
+
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<a href="https://panvelinfinita.github.io/suporte/home" target="_self" class="link">
+  <header>
+    <h1>Central de Suporte - Marketplace Panvel</h1>
+  </header></a>
+<br><br>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh; overflow: visible; position: relative;">
+  <div style="width: 100%; max-width: 600px; height: 100%; display: flex; flex-direction: column; font-family: Arial, sans-serif; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background-color: #fff; position: relative;">
+  <div style="background-color: #173C8E; color: white; padding: 20px; font-weight: bold; font-size: 20px;">
+    P.A.O.L.A - Suporte Marketplace Panvel
+  </div>
+  <div id="chat-messages" style="flex: 1; padding: 20px; padding-left: 80px; overflow-y: auto; font-size: 15px; background-color: #fff; margin-bottom: 10px;">
+    <div style="margin-bottom: 12px;"><strong>P.A.O.L.A:</strong> Olá! Como posso ajudar?</div>
+    <div style="margin-bottom: 12px;"><strong>Você:</strong> Preciso de ajuda com um pedido.</div>
+    <div style="margin-bottom: 12px;"><strong>P.A.O.L.A:</strong> Claro! Você pode me informar o número do pedido?</div>
+    <div style="margin-bottom: 12px;"><strong>Você:</strong> 12345678</div>
+    <div style="margin-bottom: 12px;"><strong>P.A.O.L.A:</strong> Obrigado! Verificando aqui para você...</div>
+  </div>
+  <div style="display: flex; justify-content: flex-end; border-top: 1px solid #ccc; padding: 6px 10px; background-color: #f1f1f1;">
+    <input id="chat-input" type="text" placeholder="Digite sua mensagem..." style="width: 65%; border: 1px solid #ccc; padding: 10px 10px 15px 50px; font-size: 15px; border-radius: 6px;" onkeypress="if(event.key==='Enter'){sendMessage();}">
+    <button onclick="sendMessage()" style="margin-left: 10px; background-color: #00BFDF; border: none; padding: 10px 16px; color: white; font-weight: bold; cursor: pointer; border-radius: 6px;">
+      Enviar
+    </button>
+  </div>
+</div>
+
+</div>
+    <!-- Bot avatar, agora dentro do box do chat, colado à esquerda -->
+    <img src="assets/src/bot-avatar.png" alt="Bot Avatar" style="position: absolute; bottom: 0px; left: 300px; width: 200px; height: auto; z-index: 10;">
+  </div>
+</div>
+
+<script>
+  function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const messages = document.getElementById('chat-messages');
+    if (input.value.trim() === '') return;
+    const userMsg = document.createElement('div');
+    userMsg.innerHTML = '<strong>Você:</strong> ' + input.value;
+    userMsg.style.marginBottom = '12px';
+    messages.appendChild(userMsg);
+    input.value = '';
+    messages.scrollTop = messages.scrollHeight;
+
+    setTimeout(() => {
+      const botMsg = document.createElement('div');
+      botMsg.innerHTML = '<strong>Bot:</strong> Esta é uma resposta simulada.';
+      botMsg.style.marginBottom = '12px';
+      messages.appendChild(botMsg);
+      messages.scrollTop = messages.scrollHeight;
+    }, 600);
+  }
+</script>
+</body>
+</html>
